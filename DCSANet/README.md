@@ -21,13 +21,13 @@ This repository contains the official code for DCSA-Net, a specialized framework
 ## 🛠️ Installation
 
 1. Clone the repository:
-```bash
+```sh
 git clone https://github.com/jinxsd/dcsanet.git
 cd dcsanet
 ```
 
 2. Install dependencies:
-```bash
+```sh
 pip install -r requirements.txt
 ```
 
@@ -49,13 +49,13 @@ datasets/
 
 ### Training
 To train the DCSA-Net from scratch (distributed training via `accelerate`):
-```bash
+```sh
 NCCL_P2P_DISABLE=1 NCCL_IB_DISABLE=1 CUDA_VISIBLE_DEVICES=0 accelerate launch main.py --mixed-precision fp16 --seed 42
 ```
 
 ### Evaluation
 To evaluate the model with a pre-trained checkpoint:
-```bash
+```sh
 NCCL_P2P_DISABLE=1 NCCL_IB_DISABLE=1 CUDA_VISIBLE_DEVICES=1 accelerate launch test.py \
   --coco-path ./datasets/coco \
   --model-config configs/networks/proposed.py \
