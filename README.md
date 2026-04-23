@@ -1,1 +1,1 @@
-The code of the paper "Prompt-aware Feature Recomposition for Interactive Defect Segmentation"
+The code of the paper "Micro Surface Defect Inspection of Aero-Engine Blades via Dynamic Cross-Scale Semantic Aggregation"
